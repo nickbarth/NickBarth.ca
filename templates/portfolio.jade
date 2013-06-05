@@ -1,0 +1,103 @@
+html
+  header
+    link(href='/stylesheets/application.css', rel='stylesheet')
+  body
+    .preload(style='position: absolute; left: 0; right: 0; overflow: hidden; display: block; height: 2000px; width: 2000px; display: none;')
+      img(src='/screenshots/formsends_com_0.png')
+      img(src='/screenshots/the_village_0.png')
+      img(src='/screenshots/servus_ca_0.png')
+      img(src='/screenshots/macewanprevet_com_0.png')
+      img(src='/screenshots/sxsw_0.png')
+      img(src='/screenshots/hiphopdx_com_0.png')
+      img(src='/screenshots/formsends_com_1.png')
+      img(src='/screenshots/formsends_com_2.png')
+      img(src='/screenshots/hiphopdx_com_1.png')
+      img(src='/screenshots/hiphopdx_com_2.png')
+      img(src='/screenshots/sxsw_1.png')
+      img(src='/screenshots/sxsw_2.png')
+      img(src='/screenshots/macewanprevet_com_1.png')
+      img(src='/screenshots/macewanprevet_com_2.png')
+      img(src='/screenshots/servus_ca_1.png')
+      img(src='/screenshots/servus_ca_2.png')
+      img(src='/screenshots/the_village_1.png')
+      img(src='/screenshots/the_village_2.png')
+      img(src='/screenshots/formsends_com_1.png')
+      img(src='/screenshots/formsends_com_2.png')
+      img(src='/screenshots/hiphopdx_com_1.png')
+      img(src='/screenshots/hiphopdx_com_2.png')
+      img(src='/screenshots/sxsw_1.png')
+      img(src='/screenshots/sxsw_2.png')
+      img(src='/screenshots/macewanprevet_com_1.png')
+      img(src='/screenshots/macewanprevet_com_2.png')
+      img(src='/screenshots/servus_ca_1.png')
+      img(src='/screenshots/servus_ca_2.png')
+      img(src='/screenshots/the_village_1.png')
+      img(src='/screenshots/the_village_2.png')
+      img(src='/screenshots/formsends_com_1.png')
+      img(src='/screenshots/formsends_com_2.png')
+      img(src='/screenshots/hiphopdx_com_1.png')
+      img(src='/screenshots/hiphopdx_com_2.png')
+      img(src='/screenshots/sxsw_1.png')
+      img(src='/screenshots/sxsw_2.png')
+      img(src='/screenshots/macewanprevet_com_1.png')
+      img(src='/screenshots/macewanprevet_com_2.png')
+      img(src='/screenshots/servus_ca_1.png')
+      img(src='/screenshots/servus_ca_2.png')
+      img(src='/screenshots/the_village_1.png')
+      img(src='/screenshots/the_village_2.png')
+    .header
+      .container
+        .row
+          .span9
+            h1
+              a(href="http://nickbarth.ca/") Nick Barth
+            h4 Portfolio
+          .span3
+    .content
+      .container
+        .row
+          .span12
+            .gallery
+              ul.thumbnails
+                 li
+                  img.img-thumb(src='/screenshots/formsends_com_0.png', data-photos='formsends_com', data-title='FormSends.com, Core Consulting')
+                 li
+                  img.img-thumb(src='/screenshots/the_village_0.png', data-photos='the_village', data-title='The Village, Servus Credit Union')
+                 li
+                  img.img-thumb(src='/screenshots/servus_ca_0.png', data-photos='servus_ca', data-title='Servus.ca, Servus Credit Union')
+                 li
+                  img.img-thumb(src='/screenshots/macewanprevet_com_0.png', data-photos='macewanprevet_com', data-title='Macewanprevet.ca, MacEwan Pre-Vet Club')
+                 li
+                  img.img-thumb(src='/screenshots/sxsw_0.png', data-photos='sxsw', data-title='South By South West, Cheri Media')
+                 li
+                  img.img-thumb(src='/screenshots/hiphopdx_com_0.png', data-photos='hiphopdx_com', data-title='HipHopDX, Cheri Media')
+            .page
+              h3.title FormSends.com
+              ul.thumbnails
+                 li
+                  img.img-full(src='/screenshots/formsends_com_1.png')
+                 li
+                  img.img-full(src='/screenshots/formsends_com_2.png')
+    .footer
+      .container
+        .row
+          .span12
+            h6
+              | Nick Barth -
+              | <a href="/">Home</a> |
+              | <a href="/portfolio">Portfolio</a> |
+              | <a href="/resume">Resume</a>
+            h6 Copyright &copy; <a href='http://nickbarth.ca/'>Nick Barth</a>
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script
+      $('.img-thumb').click(function () {
+        $('.page .title').text($(this).attr('data-title'));
+        $('li:first-child .img-full').attr('src', '/screenshots/' + $(this).attr('data-photos') + '_1.png');
+        $('li:last-child .img-full').attr('src', '/screenshots/' + $(this).attr('data-photos') + '_2.png');
+        $('.gallery').slideUp();
+        $('.page').slideDown();
+      });
+      $('.img-full').click(function () {
+        $('.page').slideUp();
+        $('.gallery').slideDown();
+      });

@@ -1,0 +1,112 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100);
+
+.vert {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+html, body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a, a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+h1 a, h1, h2, h3, h4, h5, h6, p.lead, .contact-details {
+  font-family: "Raleway", Helvetica;
+}
+
+::selection {
+  background: #e0eefb;
+}
+
+::-moz-selection {
+  background: #e0eefb;
+}
+
+.blue {
+  color: #84bdf1;
+}
+
+ul.social {
+  margin-left: -8px;
+}
+
+ul.social li a i {
+  color: #efefef;
+}
+
+.header h1, .header h1 a {
+  color: #84bdf1;
+  font-size: 40pt;
+  font-weight: normal;
+  margin-left: -2px;
+}
+
+.header h4 {
+  font-size: 16px;
+  color: #aaaaaa;
+  font-weight: normal;
+}
+
+img {
+  background: #eee;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px 5px #efefef;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.page {
+  display: none;
+}
+
+.title {
+  acolor: #999;
+  font-weight: normal;
+}
+
+span.tooltip {
+  opacity: 0;
+  top: 500px;
+  left: 500px;
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+  background: black;
+  border-radius: 2px;
+  text-shadow: rgba(0, 0, 0, 0.09804) 1px 1px 1px;
+  box-shadow: rgba(0, 0, 0, 0.09804) 1px 1px 2px 0px;
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -ms-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+
+span.tooltip:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  top: 20px;
+  left: 30px;
+}
