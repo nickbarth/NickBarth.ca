@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="//cdn.jsdelivr.net/vivus/0.2.1/vivus.min.js"></script>
+  <style type="text/css" media="screen">
+  /* General */
+  body {
+    background-color: #4A90E2;
+    background: linear-gradient(to bottom, #4A90E2 0%, #53A0FD 70%, #ffffff 70%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, #4A90E2 0%, #53A0FD 35%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 80%, #4A90E2 80%, #53A0FD 100%);
+    background-image: linear-gradient(to bottom, #4A90E2 0%, #53A0FD 35%, #ffffff 35%, #ffffff 80%, #4A90E2 80%, #53A0FD 100%);
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    color: #fff;
+  }
+
+  button {
+    background: #fff;
+    border: solid 1px #4A90E2;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  /* Typography */
+  a {
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    font-color: #5af;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 100;
+  }
+
+  h1.pal {
+    text-align: left;
+    font-family: Palatino, serif;
+    font-size: 62px;
+    font-weight: 100;
+    color: #fff;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    line-height: 1;
+  }
+
+  h6 {
+    text-align: left;
+    font-family: Palatino, serif;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    margin: -10px 0px 20px 10px;
+    padding: 0;
+    line-height: 1;
+  }
+
+  h2 {
+    font-family: Palatino, serif;
+    font-size: 75px;
+    font-weight: 100;
+  }
+
+  h3 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 100;
+  }
+
+  /* Sections */
+
+  .jumbotron {
+    background-color: transparent;
+  }
+
+  .thanks {
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  .social {}
+    ul.social {
+      width: 275px;
+      margin: 0 auto;
+    }
+
+    .social svg {
+      display: inline;
+      max-width: 60px;
+      vertical-align:middle;
+    }
+
+    .social li {
+      display: block;
+      font-size: 18px;
+      height: 80px;
+      line-height: 80px;
+      font-weight: 100;
+      text-align: left;
+    }
+
+    .social a {
+      color: #fff;
+    }
+
+  .main {
+    background-color: #fff;
+    color: #4A90E2;
+  }
+    .pal {
+      margin-top: 15%;
+      color: #aaa;
+      font-family: Palatino, serif;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 100;
+    }
+    .box {
+      padding: 20px 0;
+      border: 1px solid #4a90E2;
+      max-width: 100%;
+      max-height: 100%;
+      margin: 0 auto;
+    }
+
+  .quote {
+    background-color: #F9F9F9;
+    color: #747474;
+    font-family: Palatino, serif;
+    font-style: italic;
+    font-size: 24px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+  }
+    @media only screen and (max-width: 500px) {
+      .quote {
+        padding-top: 50px;
+        line-height: 50px;
+        height: 200px;
+      }
+    }
+
+  .nav {
+    margin-top: 10px;
+    float: right;
+  }
+    .nav a {
+      background: transparent;
+      font-family: Helvetica Neue, Helvetica, sans-serif;
+      font-weight: 100;
+      font-size: 16px;
+      color: #fff;
+      margin-left: 10px;
+      border: 1px solid #4a90E2;
+    }
+    .nav a:hover {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="nav">
+    <a href="https://ca.linkedin.com/in/barthn" class="btn btn-default">ABOUT</a>
+    <a href="https://github.com/nickbarth" class="btn btn-default">WORK</a>
+    <a href="mailto:hello@nickbarth.ca" class="btn btn-default">CONTACT</a>
+  </div>
+  <div class="jumbotron">
+    <h1>Nick Barth</h1>
+    <h2 class="text-center">Designer & Developer</h2>
+    <h1 class="text-right">{ web, mobile, ux }</h1>
+  </div>
+  <div class="row quote">
+    <div class="col-sm-12">
+      <p>“Hello. I’m Nick, a developer &amp; designer based in Western Canada”</p>
+    </div>
+  </div>
+  <div class="row main">
+    <div class="col-sm-6">
+      <svg id="devices-svg" width="505" height="290" viewBox="0 0 575 290" xmlns="http://www.w3.org/2000/svg"><title>Macbook__ipad__iphone</title><g stroke="#4990E2" id="Page-1" fill="none" fill-rule="evenodd"><g transform="translate(435.866 35.555)"><path d="M129.81 202.852H7.737c-4.243 0-7.683-3.44-7.683-7.685V7.737c0-4.243 3.44-7.684 7.683-7.684H129.81c4.245 0 7.684 3.44 7.684 7.685v187.43c0 4.244-3.44 7.684-7.683 7.684z" id="bezel" stroke-width="2" fill="#FDFDFD"/><path d="M129.81 202.852H7.737c-4.243 0-7.683-3.44-7.683-7.685V7.737c0-4.243 3.44-7.684 7.683-7.684H129.81c4.245 0 7.684 3.44 7.684 7.685v187.43c0 4.244-3.44 7.684-7.683 7.684z" stroke-width="2" fill="#FDFDFD"/><path id="screen" fill="#FFF" d="M10.872 20.477h116.39v161.845H10.872z"/><ellipse id="lock" cx="69.08" cy="191.987" rx="5.13" ry="5.133"/><ellipse id="camera" cx="68.421" cy="10.872" rx="1.912" ry="1.913"/></g><g transform="translate(1 1)"><path d="M379.868 0H62.672c-8.63 0-15.988 7.086-15.988 15.864v208.763h349.172V15.864c0-8.778-7.33-15.864-15.988-15.864z" id="bezel" stroke-width="2" fill="#FEFEFE"/><ellipse stroke-width="2" cx="221.91" cy="12.158" rx="2.558" ry="2.56"/><path d="M409.805 244.453H32.8c-19.6 0-32.8-6.73-32.8-9.59v-8.7c0-.86.854-1.553 1.915-1.553h438.773c1.063 0 1.918.693 1.918 1.553v9.042c-.004 2.262-10.226 9.248-32.8 9.248z" stroke-width="2" fill="#FDFDFD"/><path d="M.32 233.888h441.096"/><path id="screen" fill="#FFF" d="M60.753 24.957h320.44v186.86H60.754z"/><path d="M269.233 225.25v1.975c0 1.408-2.77 1.834-4.87 1.834h-86.058c-2.207 0-4.998-.426-4.998-1.835v-1.976" fill="#FFF"/></g><g transform="translate(368.718 113.625)"><path d="M83.136 165.075c0 5.652-4.6 10.233-10.272 10.233H10.272c-5.673 0-10.27-4.58-10.27-10.233V10.285C0 4.633 4.598.052 10.27.052h62.592c5.673 0 10.272 4.58 10.272 10.233v154.79z" stroke-width="2" fill="#FDFDFD"/><path fill="#FFF" d="M5.756 23.037h71.58v127.396H5.756z"/><path d="M49.242 16.475c0 .407-.28.734-.627.734H35.76c-.347 0-.627-.33-.627-.735v-1.65c0-.407.28-.735.627-.735h12.855c.346 0 .627.33.627.734v1.65z"/><ellipse cx="42.208" cy="7.679" rx="1.919" ry="1.92"/><ellipse cx="41.594" cy="163.337" rx="6.421" ry="6.4"/></g></g></svg>
+    </div>
+    <div class="col-sm-6">
+      <p class="pal">I create applications, and digital experiences for web and mobile from the ground up.</p>
+      <a href="#" data-svg="devices-svg"><button>Check Out My Latest Work</button></a>
+    </div>
+  </div>
+  <hr style="border: none; border-bottom: 2px solid #E0EEFF; width: 50%;margin-top: 40px; margin-bottom: 60px;">
+  <div class="row main" style="padding-bottom: 50px;">
+    <div class="col-sm-4">
+      <a href="https://ca.linkedin.com/in/barthn" data-svg="glasses-svg"><div class="box">
+        <svg id="glasses-svg" width="252" height="146" viewBox="0 0 252 95" xmlns="http://www.w3.org/2000/svg"><title>Slice 1</title><path d="M1 25.525V7.785l27.57-4.412S38.44 1.55 52.337 1.288c8.93-.168 20.067.77 29.51 1.72 15.02 1.515 30.702 6.312 34.676 7.23 3.973.916 4.823 1.957 9.442 1.957 4.62 0 9.21-1.46 9.21-1.46s24.22-6.76 42.19-8.372c10.748-.963 12.538-.962 16.918-1.075 2.944-.076 7.13-.608 15.725 0C231.393 2.803 251 7.578 251 7.578v17.947l-6.452.11s-.034 3.83-1.414 23.287c-1.38 19.458-9.888 30.67-19.095 37.128-9.208 6.46-25.487 11.324-49.14 3.308-23.65-8.016-33.17-36.895-33.17-36.895s-3.35-10.577-4.577-13.602c-1.228-3.024-3.942-11.458-11.436-11.458-7.493 0-9.674 4.675-11.933 11.46-2.26 6.783-.912 2.283-4.308 13.6-3.397 11.32-13.654 27.727-29.7 35.283-23.71 11.163-48.96 3.214-56.845-5.165C15.05 74.2 11.42 64.442 9.06 47.51c-.562-4.035-1.442-21.644-1.442-21.644L1 25.526zm17.604 14.78s.252-7.892.61-11.174c.357-3.282.716-3.83 1.814-6.448 1.098-2.617 1.356-2.988 2.98-4.98 1.624-1.99 1.675-2.033 3.966-3.532 2.29-1.498 2.372-1.604 5.103-2.4 2.73-.794 9.475-1.18 16.254-1.413 6.78-.234 6.158-.425 13.575-.184 7.417.24 10.25.492 14.81 1.105 4.557.614 11.616 2.726 14.567 4.4 2.95 1.67 3.564 2.12 5.44 3.964 1.01.992 3.353 3.945 4.718 7.39.67 1.69 1.647 5.093 1.796 8.766.11 2.754-.447 5.772-.827 7.712-.885 4.53-4.835 13.477-7.38 17.424-1.21 1.882-4.26 6.425-7.72 10.085-3.803 4.02-6.54 6.078-11.18 8.444-4.64 2.366-15.856 3.887-18.53 4.086-2.676.2-10.944.615-17.176-1.61-6.232-2.227-7.18-3.27-10.174-5.672-2.994-2.4-5.55-5.968-7.315-9.414-1.764-3.446-2.856-7.158-2.856-7.158s-.94-2.804-1.383-5.803c-.442-3-1.093-13.588-1.093-13.588zm214.65-.75s-.39-7.886-.804-11.162c-.415-3.276-.784-3.82-1.927-6.416-1.144-2.597-1.408-2.964-3.067-4.926-1.66-1.96-1.71-2.004-4.026-3.462-2.317-1.458-2.4-1.563-5.145-2.31-2.744-.747-9.494-1.015-16.276-1.13-6.784-.116-6.165-.318-13.576.052-7.412.37-10.24.67-14.787 1.364-4.547.693-11.57 2.928-14.49 4.652-2.92 1.724-3.526 2.185-5.37 4.06-.99 1.01-3.284 4.002-4.588 7.47-.64 1.7-1.56 5.122-1.643 8.797-.064 2.756.547 5.763.96 7.697.964 4.512 5.07 13.39 7.68 17.292 1.246 1.86 4.375 6.35 7.9 9.95 3.87 3.953 6.643 5.963 11.324 8.248 4.682 2.284 15.92 3.61 18.6 3.76 2.678.154 10.952.425 17.144-1.91 6.192-2.333 7.123-3.394 10.074-5.847 2.95-2.453 5.444-6.064 7.15-9.54 1.703-3.476 2.73-7.207 2.73-7.207s.89-2.82 1.28-5.827.856-13.605.856-13.605zM9.814 19.597c3.02 0 5.47-1.28 5.47-2.858 0-1.58-2.45-2.86-5.47-2.86-3.02 0-5.467 1.28-5.467 2.86 0 1.577 2.448 2.857 5.468 2.857zm231.132 0c3.02 0 5.467-1.28 5.467-2.858 0-1.58-2.448-2.86-5.467-2.86-3.02 0-5.468 1.28-5.468 2.86 0 1.577 2.448 2.857 5.468 2.857z" stroke="#4990E2" fill="none" fill-rule="evenodd"/></svg>
+        <h3>ABOUT</h3>
+      </div></a>
+    </div>
+    <div class="col-sm-4">
+      <a href="https://github.com/nickbarth" data-svg="browser-svg"><div class="box">
+        <svg id="browser-svg" width="250" height="146" viewBox="0 0 250 146" xmlns="http://www.w3.org/2000/svg"><title>Browser</title><g stroke="#4990E2" fill="#FFF" fill-rule="evenodd"><path d="M0 0h250v145.433H0z"/><path d="M4.808 20.433h240.385v120.192H4.808z"/><path d="M28.846 26.442h193.51v34.856H28.846zM28.846 72.115H125v60.096H28.846zM137.02 72.115h85.336v60.096H137.02zM20.433 12.02h224.76v4.807H20.433z"/><ellipse cx="14.423" cy="14.423" rx="1.202" ry="1.202"/><ellipse cx="7.212" cy="14.423" rx="1.202" ry="1.202"/></g></svg>
+        <h3>WORK</h3>
+      </div></a>
+    </div>
+    <div class="col-sm-4">
+      <a href="mailto:hello@nickbarth.ca" data-svg="big-email-svg"><div class="box">
+        <svg id="big-email-svg" width="250" height="146" viewBox="0 0 250 146" xmlns="http://www.w3.org/2000/svg"><title>Email</title><g stroke="#4990E2" fill="#FFF" fill-rule="evenodd"><path d="M0 0h250v145.548H0z"/><path d="M125.002 108.16L248.407.916H1.597z"/></g></svg>
+        <h3>CONTACT</h3>
+      </div></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="thanks">
+        <h1 class="pal">Thank you.</h1>
+        <h6>&copy; 2008-2015 NICK BARTH</h6>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <ul class="social">
+        <li><a href="https://twitter.com/NickBarth" data-svg="twitter-svg"><svg id="twitter-svg" width="57" height="47" viewBox="0 0 57 47" xmlns="http://www.w3.org/2000/svg"><title>Shape 5</title><path d="M55.814 6.406c-2.054.91-4.26 1.527-6.577 1.803 2.364-1.418 4.18-3.662 5.035-6.336C52.06 3.187 49.61 4.14 47 4.654c-2.088-2.227-5.064-3.617-8.358-3.617-6.324 0-11.45 5.127-11.45 11.45 0 .898.1 1.772.296 2.61C17.97 14.62 9.533 10.06 3.886 3.133 2.9 4.823 2.336 6.79 2.336 8.89c0 3.972 2.02 7.477 5.094 9.53-1.878-.06-3.643-.574-5.187-1.432v.144c0 5.548 3.946 10.176 9.185 11.228-.96.262-1.973.402-3.017.402-.738 0-1.455-.072-2.154-.206 1.457 4.55 5.686 7.86 10.697 7.952-3.92 3.072-8.856 4.902-14.22 4.902-.926 0-1.837-.054-2.733-.16 5.068 3.25 11.087 5.145 17.553 5.145 21.062 0 32.58-17.448 32.58-32.58 0-.496-.01-.99-.033-1.482 2.237-1.614 4.18-3.63 5.714-5.927z" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
+          @nickbarth</a></li>
+        <li><a href="https://github.com/nickbarth" data-svg="github-svg"><svg id="github-svg" width="64" height="62" viewBox="0 0 64 62" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M32 1C14.88 1 1 14.77 1 31.76c0 13.59 8.882 25.12 21.2 29.187 1.55.284 2.118-.668 2.118-1.48 0-.733-.03-3.157-.042-5.727-8.625 1.86-10.444-3.63-10.444-3.63-1.41-3.554-3.442-4.5-3.442-4.5-2.814-1.91.212-1.87.212-1.87 3.113.217 4.752 3.17 4.752 3.17 2.765 4.703 7.252 3.343 9.02 2.558.28-1.988 1.082-3.345 1.97-4.113-6.887-.778-14.125-3.416-14.125-15.202 0-3.358 1.21-6.102 3.193-8.256-.322-.775-1.383-3.903.3-8.14 0 0 2.604-.827 8.527 3.153 2.473-.682 5.125-1.023 7.76-1.036 2.634.012 5.288.354 7.765 1.036 5.917-3.98 8.517-3.154 8.517-3.154 1.687 4.237.626 7.366.304 8.14 1.988 2.155 3.19 4.9 3.19 8.257 0 11.814-7.25 14.416-14.154 15.177 1.112.955 2.102 2.827 2.102 5.696 0 4.116-.035 7.428-.035 8.44 0 .82.557 1.78 2.128 1.477C54.128 56.87 63 45.345 63 31.76 63 14.77 49.12 1 32 1z" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
+          github.com/nickbarth</a></li>
+        <li><a href="mailto:hello@nickbarth.ca" data-svg="email-svg"><svg id="email-svg" width="62" height="37" viewBox="0 0 62 37" xmlns="http://www.w3.org/2000/svg"><title>Email</title><g stroke="#FFF" fill="none" fill-rule="evenodd"><path d="M0 1h62v36H0z"/><path d="M31 28L61.108 1.474H.892z"/></g></svg>
+          hello@nickbarth.ca</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+  $("a").mouseenter(function(e) {
+    new Vivus($(this).data('svg'), {type: 'async', duration: 50})
+  });
+</script>
+</body>
+</html>
