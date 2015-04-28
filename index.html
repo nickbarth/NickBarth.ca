@@ -253,6 +253,7 @@
   </div>
 </div>
 <script>
+  $(".jumbotron").css('opacity', 0).fadeTo(2000, 1);
   $("a").mouseenter(function(e) {
     new Vivus($(this).data('svg'), {type: 'async', duration: 50})
   });
