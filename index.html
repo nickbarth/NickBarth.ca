@@ -40,9 +40,11 @@
   }
 
   /* Typography */
-  a {
+  a, a:link, a:visited, a:hover, a:active {
+    background: transparent !important;
     text-decoration: none !important;
     transition: all 0.3s ease;
+    border: none;
   }
 
   a:hover {
@@ -167,7 +169,7 @@
     margin-top: 10px;
     float: right;
   }
-    .nav a {
+    .nav a, .nav a:visited {
       background: transparent;
       font-family: Helvetica Neue, Helvetica, sans-serif;
       font-weight: 100;
@@ -176,10 +178,10 @@
       margin-left: 10px;
       border: 1px solid #4a90E2;
     }
-    .nav a:hover {
+    .nav a:hover, .nav a:active {
       background: transparent;
-      border: 1px solid #fff;
-      color: #fff;
+      border: 1px solid #fff !important;
+      color: #fff !important;
     }
   </style>
 </head>
