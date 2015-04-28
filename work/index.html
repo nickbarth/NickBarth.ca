@@ -159,10 +159,22 @@
     padding-top: 50px;
   }
     @media only screen and (max-width: 500px) {
+      h1, h2, h3, h6, p {
+        text-align: center !important;
+      }
+      .thanks h1, .thanks h6 {
+        text-align: left !important;
+      }
+      ul.social {
+        width: 100%;
+      }
       .quote {
         padding-top: 50px;
         line-height: 50px;
         height: 200px;
+      }
+      .quote p {
+        display: none;
       }
     }
 
