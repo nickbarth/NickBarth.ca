@@ -24,13 +24,12 @@
     padding: 10px;
     width: 100%;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 200;
     transition: all 0.3s ease;
     letter-spacing: 1px;
   }
 
   button:hover {
-    border: solid 1px #aaa;
   }
 
   svg {
@@ -56,12 +55,11 @@
   a, a:link, a:visited, a:hover, a:active {
     background: transparent !important;
     text-decoration: none !important;
-    transition: all 0.3s ease;
+    a-transition: all 0.3s ease;
     border: none;
   }
 
   a:hover {
-    font-color: #5af;
   }
 
   h1 {
@@ -118,10 +116,21 @@
   }
 
   .footer {
-    background: #000;
+    background: #4A90E2;
     width: 100%;
     margin-top: 20px;
+		min-height: 100px;
+		color: #eee;
+		text-align: center;
+		padding-top: 20px;
+		font-size: 14px;
+		font-weight: 300;
   }
+
+		.footer a {
+			color: #fff;
+			border-bottom: 1px solid #fff;
+		}
 
   .social {
     width: 100%;
@@ -146,10 +155,6 @@
       line-height: 50px;
       font-weight: 100;
       text-align: left;
-    }
-
-    .social a {
-      color: #fff;
     }
 
   .main {
@@ -232,7 +237,7 @@
   <div class="box photo-background "></div>
   <div class="row quote">
     <div class="col-sm-12">
-      <p>“Hello. I’m Nick, a developer &amp; designer based in Western Canada”</p>
+      <p>‚ÄúHello. I‚Äôm Nick, a developer &amp; designer based in Western Canada‚Äù</p>
     </div>
   </div>
   <div class="row main">
@@ -241,9 +246,12 @@
     </div>
     <div class="col-sm-6">
       <p class="pal">I create applications, and digital experiences for web and mobile from the ground up.</p>
-      <a href="/work" data-svg="devices-svg"><button>Check Out My Latest Work</button></a>
+      <a href="mailto:contact@nickbarth.ca" data-svg="devices-svg"><button>Contact Me</button></a>
     </div>
   </div>
 </div>
+	<div class="footer">
+		&copy; 2016 <a href="mailto:contact@nickbarth.ca">Nick Barth</a>. All rights reserved.
+	</div>
 </body>
 </html>
