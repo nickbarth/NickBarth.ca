@@ -27,7 +27,7 @@
 <div class="nav detached">
 	<div class="container">
     <h1>Nick Barth</h1>
-		<svg width="74" height="35" viewBox="0 0 74 50" xmlns="http://www.w3.org/2000/svg"><title>Logo</title><g fill="#4A90E2" fill-rule="evenodd"><path d="M17.75.962h23.5L21.126 41.026H.505L17.75.962z" fill-opacity=".5"></path><path d="M49.877 9.004h23.5L53.255 49.07H32.633L49.877 9.003z" fill-opacity=".75"></path><path d="M18 1.282h23.5L53.004 49.07h-19.5L18 1.28z" fill-opacity=".5"></path></g></svg>
+		<svg class="totop" style="cursor: pointer" width="74" height="35" viewBox="0 0 74 50" xmlns="http://www.w3.org/2000/svg"><title>Logo</title><g fill="#4A90E2" fill-rule="evenodd"><path d="M17.75.962h23.5L21.126 41.026H.505L17.75.962z" fill-opacity=".5"></path><path d="M49.877 9.004h23.5L53.255 49.07H32.633L49.877 9.003z" fill-opacity=".75"></path><path d="M18 1.282h23.5L53.004 49.07h-19.5L18 1.28z" fill-opacity=".5"></path></g></svg>
     <a href="/resume" class="btn btn-default">RESUME</a>
     <a href="#" class="btn btn-default towork">WORK</a>
     <a href="#" class="btn btn-default opencontact">CONTACT</a>
@@ -35,12 +35,8 @@
 </div>
 <div class="parallax-window" data-parallax="scroll" data-image-src="/images/photo.png"></div>
 <div class="container">
-	<!--
-	<center><img style="border-radius: 100%; margin-top: 50px;" src="https://avatars1.githubusercontent.com/u/489965?v=3&u=8e1bfda575b262ace624f8a76cb38d03df20c83c&s=400"></center>
-		-->
   <div class="row quote"><p>Hello. I'm Nick, a Full Stack Developer based in Western Canada.</p></div>
   <hr id="work" style="border: none; border-bottom: 2px solid #999; width: 50%;margin-top: 40px; margin-bottom: 60px;">
-<!--- -->
   <div class="row main" style="padding-bottom: 20px;">
     <div class="col-sm-12">
       <a href="http://atthebeep.com" target="_blank" data-svg="glasses-svg">
@@ -87,7 +83,6 @@
     </div>
   </div>
 </div>
-<!--- -->
   <hr style="border: none; border-bottom: 2px solid #999; width: 50%;margin-top: 40px; margin-bottom: 60px;">
   <div class="row main">
     <div class="col-sm-1"></div>
@@ -106,7 +101,7 @@
 		&copy; 2016 <a href="mailto:contact@nickbarth.ca">Nick Barth</a>. All rights reserved.
 	</div>
 
-<div class="backtotop">
+<div class="backtotop totop">
 	<svg width="25" height="25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 		<polygon fill="#FFFFFF" points="8,2.8 16,10.7 13.6,13.1 8.1,7.6 2.5,13.2 0,10.7 "/>
 	</svg>
@@ -171,7 +166,7 @@ $(function(){
 		}
 	});
 
-  $('.backtotop').click(function(){
+  $('.totop').click(function(){
     $('html, body').animate({scrollTop : 0}, 500);
 		return false;
   });
