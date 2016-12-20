@@ -6,6 +6,8 @@ body {
   border-top: 20px solid #4A90E2;
 }
 
+body, html { overflow-x: hidden; }
+
 button {
   background: #fff;
   color: #fff !important;
