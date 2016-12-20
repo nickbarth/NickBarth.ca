@@ -8,226 +8,14 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/vivus/0.2.1/vivus.min.js"></script>
   <link rel="icon" type="image/png" href="/favicon.png" />
-  <style type="text/css" media="screen">
-  /* General */
-  body {
-    font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
-    background: #fff;
-    color: #222;
-    border-top: 20px solid #4A90E2;
-  }
-
-  button {
-    background: #fff;
-    color: #222 !important;
-    border: solid 1px #555;
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%;
-    font-size: 20px;
-    font-weight: 200;
-    transition: all 0.3s ease;
-    letter-spacing: 1px;
-  }
-
-  button:hover {
-  }
-
-  svg {
-    display: block;
-    margin: 0 auto;
-    max-width: 90%;
-  }
-
-  .row {
-    margin-bottom: 20px;
-  }
-
-  .photo-background {
-    background: url(images/photo.jpeg) 50% 85%;
-    width: 1120px;
-    border: none !important;
-    height: 500px;
-    -webkit-filter: grayscale(.5);
-    filter: grayscale(50%);
-  }
-
-  /* Typography */
-  a, a:link, a:visited, a:hover, a:active {
-    background: transparent !important;
-    text-decoration: none !important;
-    a-transition: all 0.3s ease;
-    border: none;
-  }
-
-  a:hover {
-  }
-
-  h1 {
-    font-size: 32px;
-    font-weight: 100;
-    letter-spacing: 2px;
-  }
-
-  h1.pal {
-    text-align: left;
-    font-family: Palatino, serif;
-    font-size: 62px;
-    font-weight: 100;
-    color: #eee;
-    margin: 0;
-    margin-top: 20px;
-    padding: 0;
-    line-height: 1;
-  }
-
-  h6 {
-    text-align: left;
-    font-family: Palatino, serif;
-    font-size: 12px;
-    font-weight: 100;
-    color: #fff;
-    margin: -10px 0px 20px 10px;
-    padding: 0;
-    line-height: 1;
-  }
-
-  h2 {
-    font-family: Palatino, serif;
-    font-size: 75px;
-    font-weight: 100;
-  }
-
-  h3 {
-    font-size: 22px;
-    text-align: center;
-    font-weight: 100;
-  }
-
-  /* Sections */
-
-  .jumbotron {
-    background-color: transparent;
-    margin-top: -20px;
-  }
-
-  .thanks {
-    margin: 0 auto;
-    width: 400px;
-  }
-
-  .footer {
-    background: #4A90E2;
-    width: 100%;
-    margin-top: 20px;
-		min-height: 100px;
-		color: #eee;
-		text-align: center;
-		padding-top: 20px;
-		font-size: 14px;
-		font-weight: 300;
-  }
-
-		.footer a {
-			color: #fff;
-			border-bottom: 1px solid #fff;
-		}
-
-  .social {
-    width: 100%;
-  }
-    ul.social {
-      float: right;
-      width: 250px;
-      margin: 0 auto;
-    }
-
-    .social svg {
-      display: inline;
-      max-width: 60px;
-      vertical-align:middle;
-    }
-
-    .social li {
-      letter-spacing: 1px;
-      display: block;
-      font-size: 18px;
-      height: 40px;
-      line-height: 50px;
-      font-weight: 100;
-      text-align: left;
-    }
-
-  .main {
-    background-color: #fff;
-    color: #222;
-  }
-    .pal {
-      margin-top: 15%;
-      color: #444;
-      font-family: Palatino, serif;
-      font-size: 20px;
-      text-align: center;
-      font-weight: 100;
-    }
-    .box {
-      padding: 20px 0;
-      border: 1px solid #222;
-      max-width: 100%;
-      max-height: 100%;
-      margin: 0 auto;
-    }
-
-  .quote {
-    background: #fff;
-    color: #777;
-    font-family: Palatino, serif;
-    afont-style: italic;
-    font-size: 24px;
-    height: 150px;
-    line-height: 150px;
-    text-align: center;
-  }
-    @media only screen and (max-width: 500px) {
-      ul.social {
-        width: 100%;
-      }
-      .quote {
-        color: #777;
-        background: transparent;
-        padding-top: 20px;
-        line-height: 40px;
-        height: 80px;
-      }
-    }
-
-  .nav {
-    margin-top: 10px;
-    float: right;
-  }
-    .nav a, .nav a:visited {
-      background: transparent !important;
-      font-weight: 100;
-      font-size: 16px;
-      color: #000 !important;
-      letter-spacing: 1px;
-      margin-left: 10px;
-      border: 1px solid transparent !important;
-    }
-    .nav a:hover, .nav a:active {
-      background: transparent;
-      border: 1px solid #aaa !important;
-      color: #000 !important;
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-
 <div class="container">
   <div class="nav">
-    <a href="/resume.pdf" target="_blank" class="btn btn-default">RESUME</a>
-    <a href="/work" class="btn btn-default">WORK</a>
-    <a href="mailto:hello@nickbarth.ca" class="btn btn-default">CONTACT</a>
+    <a href="/resume" class="btn btn-default">RESUME</a>
+    <a href="#" class="btn btn-default towork">WORK</a>
+    <a href="#" class="btn btn-default opencontact">CONTACT</a>
   </div>
     <h1>Nick Barth</h1>
   <div class="jumbotron">
@@ -235,24 +23,177 @@
     <h2 class="text-center">Designer & Developer</h2>
     <h1 class="text-center">{ web, mobile, ux }</h1>
   </div>
-  <div class="box photo-background "></div>
-  <div class="row quote">
+</div>
+<div class="nav detached">
+	<div class="container">
+    <h1>Nick Barth</h1>
+		<svg width="74" height="35" viewBox="0 0 74 50" xmlns="http://www.w3.org/2000/svg"><title>Logo</title><g fill="#4A90E2" fill-rule="evenodd"><path d="M17.75.962h23.5L21.126 41.026H.505L17.75.962z" fill-opacity=".5"></path><path d="M49.877 9.004h23.5L53.255 49.07H32.633L49.877 9.003z" fill-opacity=".75"></path><path d="M18 1.282h23.5L53.004 49.07h-19.5L18 1.28z" fill-opacity=".5"></path></g></svg>
+    <a href="/resume" class="btn btn-default">RESUME</a>
+    <a href="#" class="btn btn-default towork">WORK</a>
+    <a href="#" class="btn btn-default opencontact">CONTACT</a>
+	</div>
+</div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="/images/photo.png"></div>
+<div class="container">
+	<!--
+	<center><img style="border-radius: 100%; margin-top: 50px;" src="https://avatars1.githubusercontent.com/u/489965?v=3&u=8e1bfda575b262ace624f8a76cb38d03df20c83c&s=400"></center>
+		-->
+  <div class="row quote"><p>Hello. I'm Nick, a Full Stack Developer based in Western Canada.</p></div>
+  <hr id="work" style="border: none; border-bottom: 2px solid #999; width: 50%;margin-top: 40px; margin-bottom: 60px;">
+<!--- -->
+  <div class="row main" style="padding-bottom: 20px;">
     <div class="col-sm-12">
-			<p>Hello. I'm Nick, a Full Stack Developer based in Western Canada.</p>
+      <a href="http://atthebeep.com" target="_blank" data-svg="glasses-svg">
+        <h3 class="about">Beep Inc - AtTheBeep.com - 2015</h3>
+        <p class="about">PHP, HTML, CSS, jQuery, UX Design</p>
+        <img src="/images/beep.jpg">
+      </a>
     </div>
   </div>
+  <div class="row main" style="padding-bottom: 20px;">
+    <div class="col-sm-12">
+      <a href="https://itunes.apple.com/ca/app/beep/id881685070" target="_blank" data-svg="glasses-svg">
+        <h3 class="about">Beep Inc - iOS & Android App - 2015</h3>
+        <p class="about">Swift, Java, HTML, CSS, jQuery, UX Design</p>
+        <img src="/images/beep_mobile.jpeg">
+      </a>
+    </div>
+  </div>
+  <div class="row main" style="padding-bottom: 20px;">
+    <div class="col-sm-12">
+      <a href="https://www.servus.ca" target="_blank" data-svg="glasses-svg">
+        <h3 class="about">Servus Credit Union - Intranet Portal - 2014</h3>
+        <p class="about">C#, HTML, CSS, jQuery, Visual Design</p>
+        <img src="/images/servus.png">
+      </a>
+    </div>
+  </div>
+  <div class="row main" style="padding-bottom: 20px;">
+    <div class="col-sm-12">
+      <a href="http://www.ge.com/" target="_blank" data-svg="glasses-svg">
+        <h3 class="about">GE - Project Mayne - 2013</h3>
+        <p class="about">C#, JavaScript, HTML, CSS, UI Design, UX Design</p>
+        <img src="/images/ge.jpg">
+      </a>
+    </div>
+  </div>
+  <div class="row main" style="padding-bottom: 20px;">
+    <div class="col-sm-12">
+      <a href="http://hiphopdx.com" target="_blank" data-svg="glasses-svg">
+        <h3 class="about">Cheri Media - HipHopDX.com - 2012</h3>
+        <p class="about">PHP, JavaScript, HTML, CSS, Visual Design</p>
+        <img src="/images/hiphopdx.jpg">
+      </a>
+    </div>
+  </div>
+</div>
+<!--- -->
+  <hr style="border: none; border-bottom: 2px solid #999; width: 50%;margin-top: 40px; margin-bottom: 60px;">
   <div class="row main">
-    <div class="col-sm-6">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
       <svg id="devices-svg" width="505" height="290" viewBox="0 0 575 290" xmlns="http://www.w3.org/2000/svg"><title>Macbook__ipad__iphone</title><g stroke="#666" id="Page-1" fill="none" fill-rule="evenodd"><g transform="translate(435.866 35.555)"><path d="M129.81 202.852H7.737c-4.243 0-7.683-3.44-7.683-7.685V7.737c0-4.243 3.44-7.684 7.683-7.684H129.81c4.245 0 7.684 3.44 7.684 7.685v187.43c0 4.244-3.44 7.684-7.683 7.684z" id="bezel" stroke-width="2" fill="#FDFDFD"/><path d="M129.81 202.852H7.737c-4.243 0-7.683-3.44-7.683-7.685V7.737c0-4.243 3.44-7.684 7.683-7.684H129.81c4.245 0 7.684 3.44 7.684 7.685v187.43c0 4.244-3.44 7.684-7.683 7.684z" stroke-width="2" fill="#FDFDFD"/><path id="screen" fill="#FFF" d="M10.872 20.477h116.39v161.845H10.872z"/><ellipse id="lock" cx="69.08" cy="191.987" rx="5.13" ry="5.133"/><ellipse id="camera" cx="68.421" cy="10.872" rx="1.912" ry="1.913"/></g><g transform="translate(1 1)"><path d="M379.868 0H62.672c-8.63 0-15.988 7.086-15.988 15.864v208.763h349.172V15.864c0-8.778-7.33-15.864-15.988-15.864z" id="bezel" stroke-width="2" fill="#FEFEFE"/><ellipse stroke-width="2" cx="221.91" cy="12.158" rx="2.558" ry="2.56"/><path d="M409.805 244.453H32.8c-19.6 0-32.8-6.73-32.8-9.59v-8.7c0-.86.854-1.553 1.915-1.553h438.773c1.063 0 1.918.693 1.918 1.553v9.042c-.004 2.262-10.226 9.248-32.8 9.248z" stroke-width="2" fill="#FDFDFD"/><path d="M.32 233.888h441.096"/><path id="screen" fill="#FFF" d="M60.753 24.957h320.44v186.86H60.754z"/><path d="M269.233 225.25v1.975c0 1.408-2.77 1.834-4.87 1.834h-86.058c-2.207 0-4.998-.426-4.998-1.835v-1.976" fill="#FFF"/></g><g transform="translate(368.718 113.625)"><path d="M83.136 165.075c0 5.652-4.6 10.233-10.272 10.233H10.272c-5.673 0-10.27-4.58-10.27-10.233V10.285C0 4.633 4.598.052 10.27.052h62.592c5.673 0 10.272 4.58 10.272 10.233v154.79z" stroke-width="2" fill="#FDFDFD"/><path fill="#FFF" d="M5.756 23.037h71.58v127.396H5.756z"/><path d="M49.242 16.475c0 .407-.28.734-.627.734H35.76c-.347 0-.627-.33-.627-.735v-1.65c0-.407.28-.735.627-.735h12.855c.346 0 .627.33.627.734v1.65z"/><ellipse cx="42.208" cy="7.679" rx="1.919" ry="1.92"/><ellipse cx="41.594" cy="163.337" rx="6.421" ry="6.4"/></g></g></svg>
     </div>
-    <div class="col-sm-6">
-      <p class="pal">I create applications, and digital experiences for web and mobile from the ground up.</p>
-      <a href="mailto:contact@nickbarth.ca" data-svg="devices-svg"><button>Contact Me</button></a>
+    <div class="col-sm-4 contactbuttonbox">
+      <p class="pal">Lets Work Together</p>
+      <a href="mailto:contact@nickbarth.ca">hello@nickbarth.ca</a><br>
+      <a href="tel:7809324869">1-780-932-4869</a><br><br>
+      <a href="#" data-svg="devices-svg"><button class="opencontact">Message Me</button></a>
     </div>
   </div>
 </div>
 	<div class="footer">
 		&copy; 2016 <a href="mailto:contact@nickbarth.ca">Nick Barth</a>. All rights reserved.
 	</div>
+
+<div class="backtotop">
+	<svg width="25" height="25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+		<polygon fill="#FFFFFF" points="8,2.8 16,10.7 13.6,13.1 8.1,7.6 2.5,13.2 0,10.7 "/>
+	</svg>
+</div>
+
+<div class="contactform">
+	<svg width="74" height="35" viewBox="0 0 74 50" xmlns="http://www.w3.org/2000/svg"><title>Logo</title><g fill="#4A90E2" fill-rule="evenodd"><path d="M17.75.962h23.5L21.126 41.026H.505L17.75.962z" fill-opacity=".5"></path><path d="M49.877 9.004h23.5L53.255 49.07H32.633L49.877 9.003z" fill-opacity=".75"></path><path d="M18 1.282h23.5L53.004 49.07h-19.5L18 1.28z" fill-opacity=".5"></path></g></svg>
+	<a href="#" class="close closecontact">&times;</a>
+
+	<div class="contactme">
+		<form class="form-horizontal" role="form" method="post" action="#">
+			<div class="form-group">
+				<label for="name" class="col-sm-2 control-label">Name</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email" class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="message" class="col-sm-2 control-label">Message</label>
+				<div class="col-sm-10">
+					<textarea class="form-control" rows="4" name="message" placeholder="Hello Nick"></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-10 col-sm-offset-2">
+					<button class="closecontact">Send</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="emailme">
+		Or send me an email at 
+    <a href="mailto:contact@nickbarth.ca" class="email">contact@nickbarth.ca</a>
+	</div>
+</div>
+
 </body>
+<script>
+!function(t,i,e,s){function o(i,e){var h=this;"object"==typeof e&&(delete e.refresh,delete e.render,t.extend(this,e)),this.$element=t(i),!this.imageSrc&&this.$element.is("img")&&(this.imageSrc=this.$element.attr("src"));var r=(this.position+"").toLowerCase().match(/\S+/g)||[];if(r.length<1&&r.push("center"),1==r.length&&r.push(r[0]),("top"==r[0]||"bottom"==r[0]||"left"==r[1]||"right"==r[1])&&(r=[r[1],r[0]]),this.positionX!=s&&(r[0]=this.positionX.toLowerCase()),this.positionY!=s&&(r[1]=this.positionY.toLowerCase()),h.positionX=r[0],h.positionY=r[1],"left"!=this.positionX&&"right"!=this.positionX&&(this.positionX=isNaN(parseInt(this.positionX))?"center":parseInt(this.positionX)),"top"!=this.positionY&&"bottom"!=this.positionY&&(this.positionY=isNaN(parseInt(this.positionY))?"center":parseInt(this.positionY)),this.position=this.positionX+(isNaN(this.positionX)?"":"px")+" "+this.positionY+(isNaN(this.positionY)?"":"px"),navigator.userAgent.match(/(iPod|iPhone|iPad)/))return this.imageSrc&&this.iosFix&&!this.$element.is("img")&&this.$element.css({backgroundImage:"url("+this.imageSrc+")",backgroundSize:"cover",backgroundPosition:this.position}),this;if(navigator.userAgent.match(/(Android)/))return this.imageSrc&&this.androidFix&&!this.$element.is("img")&&this.$element.css({backgroundImage:"url("+this.imageSrc+")",backgroundSize:"cover",backgroundPosition:this.position}),this;this.$mirror=t("<div />").prependTo("body");var a=this.$element.find(">.parallax-slider"),n=!1;0==a.length?this.$slider=t("<img />").prependTo(this.$mirror):(this.$slider=a.prependTo(this.$mirror),n=!0),this.$mirror.addClass("parallax-mirror").css({visibility:"hidden",zIndex:this.zIndex,position:"fixed",top:0,left:0,overflow:"hidden"}),this.$slider.addClass("parallax-slider").one("load",function(){h.naturalHeight&&h.naturalWidth||(h.naturalHeight=this.naturalHeight||this.height||1,h.naturalWidth=this.naturalWidth||this.width||1),h.aspectRatio=h.naturalWidth/h.naturalHeight,o.isSetup||o.setup(),o.sliders.push(h),o.isFresh=!1,o.requestRender()}),n||(this.$slider[0].src=this.imageSrc),(this.naturalHeight&&this.naturalWidth||this.$slider[0].complete||a.length>0)&&this.$slider.trigger("load")}function h(s){return this.each(function(){var h=t(this),r="object"==typeof s&&s;this==i||this==e||h.is("body")?o.configure(r):h.data("px.parallax")?"object"==typeof s&&t.extend(h.data("px.parallax"),r):(r=t.extend({},h.data(),r),h.data("px.parallax",new o(this,r))),"string"==typeof s&&("destroy"==s?o.destroy(this):o[s]())})}!function(){for(var t=0,e=["ms","moz","webkit","o"],s=0;s<e.length&&!i.requestAnimationFrame;++s)i.requestAnimationFrame=i[e[s]+"RequestAnimationFrame"],i.cancelAnimationFrame=i[e[s]+"CancelAnimationFrame"]||i[e[s]+"CancelRequestAnimationFrame"];i.requestAnimationFrame||(i.requestAnimationFrame=function(e){var s=(new Date).getTime(),o=Math.max(0,16-(s-t)),h=i.setTimeout(function(){e(s+o)},o);return t=s+o,h}),i.cancelAnimationFrame||(i.cancelAnimationFrame=function(t){clearTimeout(t)})}(),t.extend(o.prototype,{speed:.2,bleed:0,zIndex:-100,iosFix:!0,androidFix:!0,position:"center",overScrollFix:!1,refresh:function(){this.boxWidth=this.$element.outerWidth(),this.boxHeight=this.$element.outerHeight()+2*this.bleed,this.boxOffsetTop=this.$element.offset().top-this.bleed,this.boxOffsetLeft=this.$element.offset().left,this.boxOffsetBottom=this.boxOffsetTop+this.boxHeight;var t=o.winHeight,i=o.docHeight,e=Math.min(this.boxOffsetTop,i-t),s=Math.max(this.boxOffsetTop+this.boxHeight-t,0),h=this.boxHeight+(e-s)*(1-this.speed)|0,r=(this.boxOffsetTop-e)*(1-this.speed)|0;if(h*this.aspectRatio>=this.boxWidth){this.imageWidth=h*this.aspectRatio|0,this.imageHeight=h,this.offsetBaseTop=r;var a=this.imageWidth-this.boxWidth;this.offsetLeft="left"==this.positionX?0:"right"==this.positionX?-a:isNaN(this.positionX)?-a/2|0:Math.max(this.positionX,-a)}else{this.imageWidth=this.boxWidth,this.imageHeight=this.boxWidth/this.aspectRatio|0,this.offsetLeft=0;var a=this.imageHeight-h;this.offsetBaseTop="top"==this.positionY?r:"bottom"==this.positionY?r-a:isNaN(this.positionY)?r-a/2|0:r+Math.max(this.positionY,-a)}},render:function(){var t=o.scrollTop,i=o.scrollLeft,e=this.overScrollFix?o.overScroll:0,s=t+o.winHeight;this.boxOffsetBottom>t&&this.boxOffsetTop<=s?(this.visibility="visible",this.mirrorTop=this.boxOffsetTop-t,this.mirrorLeft=this.boxOffsetLeft-i,this.offsetTop=this.offsetBaseTop-this.mirrorTop*(1-this.speed)):this.visibility="hidden",this.$mirror.css({transform:"translate3d(0px, 0px, 0px)",visibility:this.visibility,top:this.mirrorTop-e,left:this.mirrorLeft,height:this.boxHeight,width:this.boxWidth}),this.$slider.css({transform:"translate3d(0px, 0px, 0px)",position:"absolute",top:this.offsetTop,left:this.offsetLeft,height:this.imageHeight,width:this.imageWidth,maxWidth:"none"})}}),t.extend(o,{scrollTop:0,scrollLeft:0,winHeight:0,winWidth:0,docHeight:1<<30,docWidth:1<<30,sliders:[],isReady:!1,isFresh:!1,isBusy:!1,setup:function(){if(!this.isReady){var s=t(e),h=t(i),r=function(){o.winHeight=h.height(),o.winWidth=h.width(),o.docHeight=s.height(),o.docWidth=s.width()},a=function(){var t=h.scrollTop(),i=o.docHeight-o.winHeight,e=o.docWidth-o.winWidth;o.scrollTop=Math.max(0,Math.min(i,t)),o.scrollLeft=Math.max(0,Math.min(e,h.scrollLeft())),o.overScroll=Math.max(t-i,Math.min(t,0))};h.on("resize.px.parallax load.px.parallax",function(){r(),o.isFresh=!1,o.requestRender()}).on("scroll.px.parallax load.px.parallax",function(){a(),o.requestRender()}),r(),a(),this.isReady=!0}},configure:function(i){"object"==typeof i&&(delete i.refresh,delete i.render,t.extend(this.prototype,i))},refresh:function(){t.each(this.sliders,function(){this.refresh()}),this.isFresh=!0},render:function(){this.isFresh||this.refresh(),t.each(this.sliders,function(){this.render()})},requestRender:function(){var t=this;this.isBusy||(this.isBusy=!0,i.requestAnimationFrame(function(){t.render(),t.isBusy=!1}))},destroy:function(e){var s,h=t(e).data("px.parallax");for(h.$mirror.remove(),s=0;s<this.sliders.length;s+=1)this.sliders[s]==h&&this.sliders.splice(s,1);t(e).data("px.parallax",!1),0===this.sliders.length&&(t(i).off("scroll.px.parallax resize.px.parallax load.px.parallax"),this.isReady=!1,o.isSetup=!1)}});var r=t.fn.parallax;t.fn.parallax=h,t.fn.parallax.Constructor=o,t.fn.parallax.noConflict=function(){return t.fn.parallax=r,this},t(e).on("ready.px.parallax.data-api",function(){t('[data-parallax="scroll"]').parallax()})}(jQuery,window,document);
+$(function(){
+	$(window).scroll(function(){
+		// Desktop Only
+		if ($(window).width() > 500) {
+			// Hide / Show Nav
+			if ($(this).scrollTop() > 300) {
+				$('.nav.detached').slideDown(200);
+			} else {
+				$('.nav.detached').slideUp(200);
+			}
+			// Hide Show Backtotop
+			if ($(this).scrollTop() > 300) {
+				$('.backtotop').fadeIn(200);
+			} else {
+				$('.backtotop').fadeOut(200);
+			}
+		}
+	});
+
+  $('.backtotop').click(function(){
+    $('html, body').animate({scrollTop : 0}, 500);
+		return false;
+  });
+
+	$('.opencontact').click(function(){
+		$('.contactform').slideDown(200);
+		return false;
+	});
+
+	$('.closecontact').click(function(e){
+		e.preventDefault();
+		$('.contactform').slideUp(200, function () {
+			$('input,textarea').val('');
+		})
+		return false;
+	});
+
+	$(".towork").click(function (){
+		$('html, body').animate({
+			scrollTop: $("#work").offset().top
+		}, 500);
+	});
+});
+</script>
 </html>

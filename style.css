@@ -1,0 +1,353 @@
+/* General */
+body {
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background: #fff;
+  color: #222;
+  border-top: 20px solid #4A90E2;
+}
+
+button {
+  background: #fff;
+  color: #fff !important;
+  border: solid 0px #555;
+  xorder-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  background: #4A90E2;
+  xox-shadow: 2px 2px 2px #aaa;
+}
+
+button:hover {
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.photo-background {
+  background: url(images/photo.jpeg) 50% 85%;
+  width: 1120px;
+  border: none !important;
+  height: 500px;
+  -webkit-filter: grayscale(.5);
+  filter: grayscale(50%);
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+/* Typography */
+*:focus {
+    outline: none !important;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  background: transparent !important;
+  text-decoration: none !important;
+  a-transition: all 0.3s ease;
+  border: none;
+}
+
+a:hover {
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+h1.pal {
+  text-align: left;
+  font-family: Palatino, serif;
+  font-size: 62px;
+  font-weight: 100;
+  color: #eee;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  line-height: 1;
+}
+
+h6 {
+  text-align: left;
+  font-family: Palatino, serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: #fff;
+  margin: -10px 0px 20px 10px;
+  padding: 0;
+  line-height: 1;
+}
+
+h2 {
+  font-family: Palatino, serif;
+  font-size: 75px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 100;
+}
+
+/* Sections */
+
+.jumbotron {
+  background-color: transparent;
+  margin-top: -20px;
+}
+
+.thanks {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.footer {
+  background: #4A90E2;
+  width: 100%;
+  margin-top: 20px;
+  min-height: 100px;
+  color: #eee;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+  .footer a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+.social {
+  width: 100%;
+}
+  ul.social {
+    float: right;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .social svg {
+    display: inline;
+    max-width: 60px;
+    vertical-align:middle;
+  }
+
+  .social li {
+    letter-spacing: 1px;
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 50px;
+    font-weight: 100;
+    text-align: left;
+  }
+
+.main {
+  background-color: #fff;
+  color: #222;
+}
+  .main img {
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 500px;
+  }
+  .main h3 {
+    font-size: 22px;
+    text-align: left;
+    font-weight: 100;
+  }
+    h3.about {
+      font-family: Palatino, serif;
+      font-size: 16px;
+      font-weight: 100;
+      color: #555;
+    }
+    p.about {
+      letter-spacing: 1pt;
+      font-size: 16px;
+      font-weight: 100;
+      color: #555;
+    }
+  .contactbuttonbox {
+    background: #6af;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .contactbuttonbox a {
+    color: #fff;	
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+  }
+
+  .pal {
+    color: #fff;
+    font-family: Palatino, serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+  }
+
+.quote {
+  background: #fff;
+  color: #000;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Palatino, serif;
+  font-style: italic;
+  font-size: 24px;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: -10px;
+  text-align: center;
+}
+  @media only screen and (max-width: 500px) {
+    ul.social {
+      width: 100%;
+    }
+    .quote {
+      color: #777;
+      background: transparent;
+      padding-top: 20px;
+      line-height: 40px;
+      height: 80px;
+    }
+  }
+
+.nav {
+  margin-top: 10px;
+  float: right;
+}
+  .nav a, .nav a:visited {
+    background: transparent !important;
+    font-weight: 100;
+    font-size: 16px;
+    color: #000 !important;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    border: 1px solid transparent !important;
+  }
+  .nav a:hover, .nav a:active {
+    background: transparent;
+    border: 1px solid #aaa !important;
+    color: #000 !important;
+  }
+.nav.detached {
+  position: fixed;
+  background: #4A90E2;
+  background: #fff;
+  z-index: 100;
+  height: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: -5px;
+  padding-top: 10px;
+  display: none;
+  text-align: right;
+}
+  .nav h1 {
+    margin: 0;
+    float: left;
+    color: #4A90E2;
+    display: none;
+  }
+  .nav svg {
+    float: left;
+    margin-top: 0px;
+  }
+
+.backtotop {
+  border-radius: 5px;
+  width: 50px; 
+  height: 50px;
+  padding-top: 10px;
+  text-align: center; 
+  background:  #000;
+  font-weight:  bold;
+  color:  #444;
+  text-decoration:  none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.contactform {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  background: white;
+  overflow-x: hidden;
+  padding: 50px;
+  display: none;
+}
+
+  .contactform svg {
+    float: left;
+    height: 50px;
+  }
+
+  .contactform a.close,
+  .contactform a.close:link,
+  .contactform a.close:hover,
+  .contactform a.close:visited,
+  .contactform a.close:active {
+    line-height: 50px;
+    float: right;
+    color: #4A90E2 !important;
+    opacity: 1;
+    font-size: 50px;
+    margin-top: -5px;
+  }
+
+  .contactform .emailme {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 18px;
+  }
+
+  .contactme {
+    padding: 100px;
+  }
+
+  .contactform input,
+  .contactform textarea {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #4A90E2;
+    border-radius: 0;
+    outline: none;
+  }
+
+  .contactform label {
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  
+  }

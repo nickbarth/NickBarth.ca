@@ -8,12 +8,17 @@
     @import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css");
     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css");
     .vert {
+      color: #4A90E2 !important;
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
     }
     html,
     body {
       font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    body {
+      border-top: 20px solid #4A90E2;
+      padding-top: 10px;
     }
     a,
     a:hover {
@@ -52,13 +57,29 @@
       font-size: 16px;
       font-weight: 100;
     }
+.footer {
+  background: #4A90E2;
+  width: 100%;
+  margin-top: 20px;
+  min-height: 100px;
+  color: #eee;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+  .footer a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
   </style>
   <body>
     <div class="content header">
       <div class="container">
         <div class="row">
           <div class="span9">
-            <h1>Nick Barth</h1>
+            <a href="/"><h1 style="color: #38d; font-weight: 200;">Nick Barth</h1></a>
             <h4>Digital Media Designer & Developer</h4>
           </div>
           <div class="span3 pull-right contact-details">
@@ -97,7 +118,7 @@
           </div>
           <div class="span5">
             <p class="lead"><b>Recent History</b></p>
-            <p><b>Digital Media Designer</b>, Beep Mobile Inc</p>
+            <p><b>Mobile / Web Developer</b>, Beep Mobile Inc</p>
             <p>(June 2013 - Current), Edmonton, AB</p>
             <p>
               As a lead member a of the design and development team, I was
@@ -164,5 +185,8 @@
         </div>
       </div>
     </div>
+	<div class="footer">
+		&copy; 2016 <a href="mailto:contact@nickbarth.ca">Nick Barth</a>. All rights reserved.
+	</div>
   </body>
 </html>
