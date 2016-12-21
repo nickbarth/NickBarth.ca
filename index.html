@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="stylesheet" href="/style.css">
 </head>
-<body class="home">
+<body class="home" style="display: none">
 <div class="resume"></div>
 <div class="container">
   <div class="nav">
@@ -240,7 +240,9 @@ $(function(){
 		return false;
 	});
 
-	$(".resume").load("resume/index.html");
+	$(".resume").load("resume/index.html", function () {
+		$(".home").velocity("fadeIn", { duration: 2000 });
+	});
 });
 </script>
 </html>
