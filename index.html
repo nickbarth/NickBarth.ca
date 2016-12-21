@@ -7,15 +7,17 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/vivus/0.2.1/vivus.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.4.1/velocity.min.js"></script>
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="home">
+<div class="resume"></div>
 <div class="container">
   <div class="nav">
-    <a href="/resume" class="btn btn-default">RESUME</a>
-    <a href="#" class="btn btn-default towork">WORK</a>
-    <a href="#" class="btn btn-default opencontact">CONTACT</a>
+    <a href="/resume" class="toresume">RESUME</a>
+    <a href="#" class="towork">WORK</a>
+    <a href="#" class="tocontact">CONTACT</a>
   </div>
     <h1>Nick Barth</h1>
   <div class="jumbotron">
@@ -28,21 +30,39 @@
 	<div class="container">
     <h1>Nick Barth</h1>
 		<svg class="totop" style="cursor: pointer" width="74" height="35" viewBox="0 0 74 50" xmlns="http://www.w3.org/2000/svg"><title>Logo</title><g fill="#4A90E2" fill-rule="evenodd"><path d="M17.75.962h23.5L21.126 41.026H.505L17.75.962z" fill-opacity=".5"></path><path d="M49.877 9.004h23.5L53.255 49.07H32.633L49.877 9.003z" fill-opacity=".75"></path><path d="M18 1.282h23.5L53.004 49.07h-19.5L18 1.28z" fill-opacity=".5"></path></g></svg>
-    <a href="/resume" class="btn btn-default">RESUME</a>
-    <a href="#" class="btn btn-default towork">WORK</a>
-    <a href="#" class="btn btn-default opencontact">CONTACT</a>
+    <a href="/resume" class="toresume">RESUME</a>
+    <a href="#" class="towork">WORK</a>
+    <a href="#" class="tocontact">CONTACT</a>
 	</div>
 </div>
 <div class="parallax-window" data-parallax="scroll" data-image-src="/images/photo.png"></div>
+<div class="quote"><p>Hello. I'm Nick, a Full Stack Developer based in Western Canada.</p></div>
 <div class="container">
-  <div class="row quote"><p>Hello. I'm Nick, a Full Stack Developer based in Western Canada.</p></div>
-  <hr id="work" style="border: none; border-bottom: 2px solid #999; width: 50%;margin-top: 40px; margin-bottom: 60px;">
+  <hr id="work" style="border: none;">
+  <div class="row main" style="padding-bottom: 20px;">
+    <div class="col-sm-12">
+      <a href="https://itunes.apple.com/ca/app/raven-crest-golf-country-club/id1019601980?mt=8" target="_blank">
+        <h3 class="about">Raven Crest Golf and Country Club - iOS & Android App - 2016</h3>
+        <p class="about">Swift, Java, HTML, CSS, jQuery, Ionic</p>
+        <img src="/images/ravencrest.png" style="width: 320px;">
+      </a>
+    </div>
+  </div>
+  <div class="row main" style="padding-bottom: 20px;">
+    <div class="col-sm-12">
+      <a href="http://blendable.ca" target="_blank" data-svg="glasses-svg">
+        <h3 class="about">Blendable - Lift Interactive - 2016</h3>
+        <p class="about">Python, Django, HTML, CSS, jQuery</p>
+        <img class="full" src="/images/blendable.jpg">
+      </a>
+    </div>
+  </div>
   <div class="row main" style="padding-bottom: 20px;">
     <div class="col-sm-12">
       <a href="http://atthebeep.com" target="_blank" data-svg="glasses-svg">
         <h3 class="about">Beep Inc - AtTheBeep.com - 2015</h3>
         <p class="about">PHP, HTML, CSS, jQuery, UX Design</p>
-        <img src="/images/beep.jpg">
+        <img class="full" src="/images/beep.jpg">
       </a>
     </div>
   </div>
@@ -60,7 +80,7 @@
       <a href="https://www.servus.ca" target="_blank" data-svg="glasses-svg">
         <h3 class="about">Servus Credit Union - Intranet Portal - 2014</h3>
         <p class="about">C#, HTML, CSS, jQuery, Visual Design</p>
-        <img src="/images/servus.png">
+        <img class="full" src="/images/servus.png">
       </a>
     </div>
   </div>
@@ -69,7 +89,7 @@
       <a href="http://www.ge.com/" target="_blank" data-svg="glasses-svg">
         <h3 class="about">GE - Project Mayne - 2013</h3>
         <p class="about">C#, JavaScript, HTML, CSS, UI Design, UX Design</p>
-        <img src="/images/ge.jpg">
+        <img class="full" src="/images/ge.jpg">
       </a>
     </div>
   </div>
@@ -78,12 +98,12 @@
       <a href="http://hiphopdx.com" target="_blank" data-svg="glasses-svg">
         <h3 class="about">Cheri Media - HipHopDX.com - 2012</h3>
         <p class="about">PHP, JavaScript, HTML, CSS, Visual Design</p>
-        <img src="/images/hiphopdx.jpg">
+        <img class="full" src="/images/hiphopdx.jpg">
       </a>
     </div>
   </div>
 </div>
-  <hr style="border: none; border-bottom: 2px solid #999; width: 50%;margin-top: 40px; margin-bottom: 60px;">
+  <hr id="contact" style="border: none">
   <div class="row main">
     <div class="col-sm-1"></div>
     <div class="col-sm-5">
@@ -91,7 +111,7 @@
     </div>
     <div class="col-sm-4 contactbuttonbox">
       <p class="pal">Lets Work Together</p>
-      <a href="mailto:contact@nickbarth.ca">hello@nickbarth.ca</a><br>
+      <a href="mailto:contact@nickbarth.ca">contact@nickbarth.ca</a><br>
       <a href="tel:7809324869">1-780-932-4869</a><br><br>
       <a href="#" data-svg="devices-svg"><button class="opencontact">Message Me</button></a>
     </div>
@@ -99,6 +119,10 @@
 </div>
 	<div class="footer">
 		&copy; 2016 <a href="mailto:contact@nickbarth.ca">Nick Barth</a>. All rights reserved.
+		<br> <br>
+		<a class="social" href="http://github.com/nickbarth/"><img height="32" width="32" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik0yNTYsMEMxMTQuNjE1LDAsMCwxMTQuNjE1LDAsMjU2czExNC42MTUsMjU2LDI1NiwyNTZzMjU2LTExNC42MTUsMjU2LTI1NlMzOTcuMzg1LDAsMjU2LDB6IE00MDguMDI3LDQwOC4wMjcgICBjLTE5Ljc2LDE5Ljc1OS00Mi43NTYsMzUuMjY3LTY4LjM1NCw0Ni4wOTRjLTYuNTAyLDIuNzUtMTMuMTA1LDUuMTY0LTE5LjgwMSw3LjI0NlY0MjNjMC0yMC4xNjctNi45MTYtMzUtMjAuNzUtNDQuNSAgIGM4LjY2OC0wLjgzMywxNi42MjUtMiwyMy44NzUtMy41czE0LjkxOC0zLjY2NywyMy02LjVjOC4wODQtMi44MzMsMTUuMzM0LTYuMjA4LDIxLjc1LTEwLjEyNWM2LjQxOC0zLjkxNywxMi41ODQtOSwxOC41LTE1LjI1ICAgYzUuOTE4LTYuMjUsMTAuODc1LTEzLjMzMywxNC44NzUtMjEuMjVzNy4xNjgtMTcuNDE3LDkuNS0yOC41YzIuMzM0LTExLjA4MywzLjUtMjMuMjkyLDMuNS0zNi42MjVjMC0yNS44MzMtOC40MTYtNDcuODMzLTI1LjI1LTY2ICAgYzcuNjY4LTIwLDYuODM0LTQxLjc1LTIuNS02NS4yNWwtNi4yNS0wLjc1Yy00LjMzMi0wLjUtMTIuMTI1LDEuMzMzLTIzLjM3NSw1LjVzLTIzLjg3NSwxMS0zNy44NzUsMjAuNSAgIGMtMTkuODMyLTUuNS00MC40MTYtOC4yNS02MS43NDktOC4yNWMtMjEuNSwwLTQyLDIuNzUtNjEuNSw4LjI1Yy04LjgzMy02LTE3LjIwOC0xMC45NTgtMjUuMTI1LTE0Ljg3NXMtMTQuMjUtNi41ODMtMTktOCAgIHMtOS4xNjctMi4yOTItMTMuMjUtMi42MjVzLTYuNzA4LTAuNDE3LTcuODc1LTAuMjVzLTIsMC4zMzMtMi41LDAuNWMtOS4zMzMsMjMuNjY3LTEwLjE2Nyw0NS40MTctMi41LDY1LjI1ICAgYy0xNi44MzMsMTguMTY3LTI1LjI1LDQwLjE2Ny0yNS4yNSw2NmMwLDEzLjMzMywxLjE2NywyNS41NDIsMy41LDM2LjYyNXM1LjUsMjAuNTgzLDkuNSwyOC41czguOTU4LDE1LDE0Ljg3NSwyMS4yNSAgIHMxMi4wODMsMTEuMzMzLDE4LjUsMTUuMjVzMTMuNjY3LDcuMjkyLDIxLjc1LDEwLjEyNXMxNS43NSw1LDIzLDYuNXMxNS4yMDgsMi42NjcsMjMuODc1LDMuNWMtMTMuNjY3LDkuMzMzLTIwLjUsMjQuMTY3LTIwLjUsNDQuNSAgIHYzOS4xMTVjLTcuNTQ5LTIuMjQ3LTE0Ljk5LTQuOTAyLTIyLjMtNy45OTRjLTI1LjU5Ny0xMC44MjctNDguNTk0LTI2LjMzNS02OC4zNTMtNDYuMDk0ICAgYy0xOS43NTgtMTkuNzU4LTM1LjI2Ny00Mi43NTYtNDYuMDkzLTY4LjM1NEM0Ni42NzksMzEzLjE5NSw0MSwyODUuMDQzLDQxLDI1NnM1LjY3OS01Ny4xOTUsMTYuODc5LTgzLjY3NSAgIGMxMC44MjctMjUuNTk3LDI2LjMzNS00OC41OTQsNDYuMDkzLTY4LjM1M2MxOS43NTgtMTkuNzU5LDQyLjc1Ni0zNS4yNjcsNjguMzUzLTQ2LjA5M0MxOTguODA1LDQ2LjY3OSwyMjYuOTU3LDQxLDI1Niw0MSAgIHM1Ny4xOTUsNS42NzksODMuNjc2LDE2Ljg3OWMyNS41OTgsMTAuODI3LDQ4LjU5NCwyNi4zMzUsNjguMzU0LDQ2LjA5M2MxOS43NTgsMTkuNzU4LDM1LjI2Niw0Mi43NTYsNDYuMDkyLDY4LjM1MyAgIEM0NjUuMzIsMTk4LjgwNSw0NzEsMjI2Ljk1Nyw0NzEsMjU2cy01LjY4LDU3LjE5NS0xNi44NzksODMuNjc1QzQ0My4yOTUsMzY1LjI3MSw0MjcuNzg1LDM4OC4yNyw0MDguMDI3LDQwOC4wMjd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></a>
+		<a class="social" href="http://ca.linkedin.com/in/barthn"><img height="32" width="32" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5Db21iaW5lZCBTaGFwZTwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPHBhdGggZD0iTTE2LDMyIEMyNC44MzY1NTYsMzIgMzIsMjQuODM2NTU2IDMyLDE2IEMzMiw3LjE2MzQ0NCAyNC44MzY1NTYsMCAxNiwwIEM3LjE2MzQ0NCwwIDAsNy4xNjM0NDQgMCwxNiBDMCwyNC44MzY1NTYgNy4xNjM0NDQsMzIgMTYsMzIgWiBNMTcsMTMuOTYxNDU2NiBMMTcsMTMgTDE0LDEzIEwxNCwyNCBMMTcsMjQgTDE3LDE1LjA1NzYyODIgQzE3LjA1NDQxMDIsMTQuOTc5NjExMSAxNy4xMTYxNDQxLDE0LjkwMjMzNTYgMTcuMTgxNjQwNiwxNC44MjUxOTUzIEMxNy40MDAzOTE3LDE0LjU2NzM4MTUgMTcuNjU0Mjk1NCwxNC4zOTU1MDgyIDE3Ljk0MzM1OTQsMTQuMzA5NTcwMyBDMTguMTAzNTE2NCwxNC4yNTg3ODg4IDE4LjMwODU5MjUsMTQuMjMzMzk4NCAxOC41NTg1OTM4LDE0LjIzMzM5ODQgQzE5LjA1MDc4MzcsMTQuMjMzMzk4NCAxOS42MTgxNjQxLDE0LjgyNTE5NTMgMTkuNjE4MTY0MSwxNC44MjUxOTUzIEMxOS43OTI5MTIsMTQuOTg0MDAyNCAxOS45MzM3ODM1LDE2LjI3MDY4MjcgMjAsMTYuNDMyMTI4OSBMMjAsMjQgTDI0LDI0IEMyNCwyNCAyNC4xMjMyODc1LDE0LjQ3NzE3MTQgMjQsMTQuMjMzMzk4NCBDMjMuODM3Mzc1NCwxMy45MTAxODIgMjMuMTczMDE5NCwxMy4xNDI4NjM1IDIyLjE2MDY0NDUsMTMgQzIxLjE0ODI2OTcsMTIuODU3MTM2NSAxOS40Nzc5MzA1LDEzIDE5LjA1MDc4MTIsMTMgQzE4LjY0NDUyOTIsMTMgMTguMjc1MzkyMywxMy4wODAwNzczIDE3Ljk0MzM1OTQsMTMuMjQwMjM0NCBDMTcuNzA3MTI2LDEzLjM1NDE4MjMgMTcuMzE0MDY3NSwxMy42NjE0MTMgMTcsMTMuOTYxNDU2NiBaIE04LDEzIEwxMiwxMyBMMTIsMjQgTDgsMjQgTDgsMTMgWiBNMTAsMTIgQzExLjEwNDU2OTUsMTIgMTIsMTEuMTA0NTY5NSAxMiwxMCBDMTIsOC44OTU0MzA1IDExLjEwNDU2OTUsOCAxMCw4IEM4Ljg5NTQzMDUsOCA4LDguODk1NDMwNSA4LDEwIEM4LDExLjEwNDU2OTUgOC44OTU0MzA1LDEyIDEwLDEyIFoiIGlkPSJDb21iaW5lZC1TaGFwZSIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPiAgICA8L2c+PC9zdmc+" /></a>
+		<a class="social" href="http://twitter.com/nickbarth/"><img height="32" width="32" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4Ni4zOTIgNDg2LjM5MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg2LjM5MiA0ODYuMzkyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTI0My4xOTYsMEMxMDguODkxLDAsMCwxMDguODkxLDAsMjQzLjE5NnMxMDguODkxLDI0My4xOTYsMjQzLjE5NiwyNDMuMTk2ICAgIHMyNDMuMTk2LTEwOC44OTEsMjQzLjE5Ni0yNDMuMTk2QzQ4Ni4zOTIsMTA4Ljg2MSwzNzcuNTAxLDAsMjQzLjE5NiwweiBNMzY0LjE4NiwxODguNTk4bDAuMTgyLDcuNzUyICAgIGMwLDc5LjE2LTYwLjIyMSwxNzAuMzU5LTE3MC4zNTksMTcwLjM1OWMtMzMuODA0LDAtNjUuMjY4LTkuOTEtOTEuNzc2LTI2LjkwNGM0LjY4MiwwLjU0Nyw5LjQ1NCwwLjg1MSwxNC4yODgsMC44NTEgICAgYzI4LjA1OSwwLDUzLjg2OC05LjU3Niw3NC4zNTctMjUuNjI3Yy0yNi4yMDQtMC40ODYtNDguMzA1LTE3LjgxNC01NS45MzUtNDEuNTg2YzMuNjc4LDAuNjk5LDcuMzg3LDEuMDM0LDExLjI3OCwxLjAzNCAgICBjNS40NzIsMCwxMC43NjEtMC42OTksMTUuNzc3LTIuMDY3Yy0yNy4zOS01LjUzMy00OC4wMzEtMjkuNy00OC4wMzEtNTguNzAxdi0wLjc2YzguMDg2LDQuNDk5LDE3LjI5Nyw3LjE3NCwyNy4xMTYsNy41MDkgICAgYy0xNi4wNTEtMTAuNzMxLTI2LjYzLTI5LjA2Mi0yNi42My00OS44MjVjMC0xMC45NzQsMi45NDktMjEuMjQ5LDguMDg2LTMwLjA5NWMyOS41MTgsMzYuMjM2LDczLjY1OCw2MC4wNjksMTIzLjQyMiw2Mi41NjIgICAgYy0xLjAzNC00LjM3OC0xLjU1LTguOTY4LTEuNTUtMTMuNjQ5YzAtMzMuMDQ0LDI2LjgxMi01OS44NTcsNTkuODg3LTU5Ljg1N2MxNy4yMDYsMCwzMi43NzEsNy4yNjUsNDMuNzE0LDE4LjkwOCAgICBjMTMuNjE5LTIuNzA2LDI2LjQ0OC03LjY5MSwzOC4wMy0xNC41MzFjLTQuNDY5LDEzLjk4NC0xMy45NTMsMjUuNzE4LTI2LjMyNiwzMy4xMzVjMTIuMDY5LTEuNDI5LDIzLjY1MS00LjY4MiwzNC4zODItOS40MjQgICAgQzM4Ni4wNzMsMTY5LjY1OSwzNzUuODg5LDE4MC4yMDgsMzY0LjE4NiwxODguNTk4eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a>
 	</div>
 
 <div class="backtotop totop">
@@ -132,7 +156,8 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="col-sm-10 col-sm-offset-2">
+				<label for="message" class="col-sm-2 control-label"></label>
+				<div class="col-sm-10">
 					<button class="closecontact">Send</button>
 				</div>
 			</div>
@@ -166,11 +191,6 @@ $(function(){
 		}
 	});
 
-  $('.totop').click(function(){
-    $('html, body').animate({scrollTop : 0}, 500);
-		return false;
-  });
-
 	$('.opencontact').click(function(){
 		$('.contactform').slideDown(200);
 		return false;
@@ -184,11 +204,43 @@ $(function(){
 		return false;
 	});
 
+	function scrollTo(elm) {
+		console.log('scroll to', elm)
+		var offset = elm && $(elm).offset().top || 0;
+		if (Math.abs($(window).scrollTop() - offset) > 100) {
+			$('html, body').velocity("stop");
+			$('html, body').velocity("scroll", { duration: 1000, offset: offset });
+		}
+	}
+
+  $('.totop').click(function(){
+		scrollTo();
+		return false;
+  });
+
 	$(".towork").click(function (){
-		$('html, body').animate({
-			scrollTop: $("#work").offset().top
-		}, 500);
+		scrollTo("#work")
+		return false;
 	});
+
+	$(".tocontact").click(function (){
+		scrollTo("#contact")
+		return false;
+	});
+
+	$(".toresume").click(function (){
+		$(".resume").slideDown();
+		$("body,html").css("overflow-y", "hidden");
+		return false;
+	});
+
+	$(".resume").on("click", ".closeresume", function (){
+		$(".resume").slideUp();
+		$("body,html").css("overflow-y", "scroll");
+		return false;
+	});
+
+	$(".resume").load("resume/index.html");
 });
 </script>
 </html>
