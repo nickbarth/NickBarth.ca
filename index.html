@@ -240,10 +240,11 @@ $(function(){
 		return false;
 	});
 
-	$('<img src="/images/photo.png"/>');
 
-	$(".resume").delay(500).load("resume/index.html", function () {
-		$(".home").velocity("fadeIn", { duration: 2000 });
+	$(".resume").load("resume/index.html", function () {
+		$('<img src="/images/photo.png"/>').on('load', function () {
+			$(".home").velocity("fadeIn", { duration: 2000 });
+		});
 	});
 });
 </script>
