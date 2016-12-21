@@ -360,6 +360,10 @@ h3 {
     margin-top: -5px;
   }
 
+  .contactform a {
+    color: #4A90E2 !important;
+  }
+
   .contactform .emailme {
     position: absolute;
     bottom: 50px;
