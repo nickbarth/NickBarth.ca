@@ -240,7 +240,9 @@ $(function(){
 		return false;
 	});
 
-	$(".resume").load("resume/index.html", function () {
+	$('<img src="/images/photo.png"/>');
+
+	$(".resume").delay(500).load("resume/index.html", function () {
 		$(".home").velocity("fadeIn", { duration: 2000 });
 	});
 });
