@@ -11,6 +11,8 @@ body {
   margin-left: 0px !important;
 }
 
+* { max-width: 100%; }
+
 body, html { overflow-x: hidden; }
 
 button {
@@ -322,7 +324,7 @@ h3 {
   top: 0;
   background: white;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: scroll !important;
   padding: 0;
   margin: 0;
   display: none;
